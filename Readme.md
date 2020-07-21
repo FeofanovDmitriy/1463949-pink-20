@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Дмитрий Феофанов](https://up.htmlacademy.ru/adaptive/20/user/1463949).
-* Наставник: `Неизвестно`.
+- Студент: [Дмитрий Феофанов](https://up.htmlacademy.ru/adaptive/20/user/1463949).
+- Наставник: Арсений Матыцин.
 
 ---
 

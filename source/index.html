@@ -1,153 +1,201 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+  <head class="head">
+    <meta charset="utf-8" />
+    <title>HTML Academy: Пинк</title>
+  </head>
 
-<head class="head">
-  <meta charset="utf-8" />
-  <title>HTML Academy: Пинк</title>
-</head>
+  <body class="page__body">
+    <header class="page-header">
+      <a
+        class="page-header__logo logotype"
+        aria-label="Ссылка с логотипом на главную страницу"
+      >
+        <img
+          class="logotype__link"
+          src="https://via.placeholder.com/74x23"
+          alt="Pink"
+        />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-<body class="page__body">
-  <header class="page-header">
-    <a class="page-header__logo logotype">
-      <img class="page-header__link" src="https://via.placeholder.com/74x23" alt="Pink" />
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">
+        Сайт фотоприложения для раскрашивания серых будней
+      </h1>
 
-  <main class="page-main">
-    <h1 class="visually-hidden">Сайт фотоприложения для раскрашивания серых будней</h1>
-
-    <section class="download-app">
-      <div class="intro">
-        <div class="intro__wrapper">
-          <h2 class="intro__title intro__title--index">Взгляните на жизнь иначе!</h2>
-          <div class="download-app__wrapper">
-            <button class="download-app__button button" type="button">Скачать приложение</button>
-            <ul class="download-app__list download-app-list">
-              <li class="download-app-list__item">
-                <a class="download-app-list__link download-app-list__link--apple" href="https://www.apple.com/">
-                  <span class="visually-hidden">Скачать приложение PINK на iPhone</span>
-                </a>
-              </li>
-              <li class="download-app-list__item">
-                <a class="download-app-list__link download-app-list__link--android"
-                  href="https://play.google.com/store">
-                  <span class="visually-hidden">Скачать приложение PINK на android</span>
-                </a>
-              </li>
-              <li class="download-app-list__item">
-                <a class="download-app-list__link download-app-list__link--windows"
-                  href="https://www.microsoft.com/ru-ru/store/apps">
-                  <span class="visually-hidden">Скачать приложение PINK на windows</span>
-                </a>
-              </li>
-            </ul>
-            <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <section class="download-app">
+        <div class="intro">
+          <div class="intro__wrapper">
+            <h2 class="intro__title intro__title--index">
+              Взгляните на жизнь иначе!
+            </h2>
+            <div class="download-app__wrapper">
+              <button class="download-app__button button" type="button">
+                Скачать приложение
+              </button>
+              <ul class="download-app__list download-app-list">
+                <li class="download-app-list__item">
+                  <a
+                    class="download-app-list__link download-app-list__link--apple"
+                    href="https://www.apple.com/"
+                  >
+                    <span class="visually-hidden"
+                      >Скачать приложение PINK на iPhone</span
+                    >
+                  </a>
+                </li>
+                <li class="download-app-list__item">
+                  <a
+                    class="download-app-list__link download-app-list__link--android"
+                    href="https://play.google.com/store"
+                  >
+                    <span class="visually-hidden"
+                      >Скачать приложение PINK на android</span
+                    >
+                  </a>
+                </li>
+                <li class="download-app-list__item">
+                  <a
+                    class="download-app-list__link download-app-list__link--windows"
+                    href="https://www.microsoft.com/ru-ru/store/apps"
+                  >
+                    <span class="visually-hidden"
+                      >Скачать приложение PINK на windows</span
+                    >
+                  </a>
+                </li>
+              </ul>
+              <p class="download-app__text">
+                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows
+                8
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="advantages">
-      <h2 class="visually-hidden">Преимущества нашего приложения</h2>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества нашего приложения</h2>
 
-      <div class="advantages__header">
-        <p class="advantages__text">Устали от серости мегаполиса?</p>
-        <p class="advantages__text">Нам есть, что вам<br>предложить!</p>
-      </div>
+        <div class="advantages__header">
+          <p class="advantages__text">Устали от серости мегаполиса?</p>
+          <p class="advantages__text">Нам есть, что вам<br />предложить!</p>
+        </div>
 
-      <div class="advantages__wrapper">
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--cheer">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__description">
-              Приложение позволит вам победить осеннюю хандру и депрессию
-              буквально в несколько кликов!
-            </p>
+        <div class="advantages__wrapper">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--cheer">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">
+                Приложение позволит вам победить осеннюю хандру и депрессию
+                буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--diversify">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                чтобы усилить эффект
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--friends">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                заводите новых
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Карта, где нас найти</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.3842274429476!2d30.325600766147744!3d59.93726908056032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5!5e0!3m2!1sru!2sru!4v1595191383553!5m2!1sru!2sru"
+          width="320"
+          height="200"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="page-footer__logo logotype">
+        <h2 class="visually-hidden">Логотип приложения Pink</h2>
+        <a class="page-footer__link">
+          <img
+            src="https://via.placeholder.com/145x40"
+            class="page-footer__logo-name logotype"
+            alt="Ссылка с логотипом на главную страницу"
+          />
+        </a>
+      </section>
+      <section class="page-footer__social social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a
+              class="social-list__link social-list__link--twitter"
+              href="#"
+              aria-label="Перейти в Twitter"
+            ></a>
           </li>
-          <li class="advantages__item advantages__item--diversify">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью,
-              чтобы усилить эффект
-            </p>
+          <li class="social-list__item">
+            <a
+              class="social-list__link social-list__link--facebook"
+              href="#"
+              aria-label="Перейти в Facebook"
+            ></a>
           </li>
-          <li class="advantages__item advantages__item--friends">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-              заводите новых
-            </p>
+          <li class="social-list__item">
+            <a
+              class="social-list__link social-list__link--youtube"
+              href="#"
+              aria-label="Перейти на Youtube"
+            ></a>
           </li>
         </ul>
-      </div>
-
-    </section>
-
-    <section class="map">
-      <h2 class="visually-hidden">Карта, где нас найти</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.3842274429476!2d30.325600766147744!3d59.93726908056032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5!5e0!3m2!1sru!2sru!4v1595191383553!5m2!1sru!2sru"
-        width="320" height="200" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
-    </section>
-  </main>
-
-  <footer class="page-footer">
-    <section class="page-footer__logo logotype">
-      <h2 class="visually-hidden">Логотип магазина Pink</h2>
-      <a class="page-footer__link">
-        <img src="https://via.placeholder.com/145x40" class="page-footer__logo-name logotype" />
-      </a>
-    </section>
-    <section class="page-footer__social social">
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--twitter" href="#" aria-label="Перейти в Twitter"></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--facebook" href="#" aria-label="Перейти в Facebook"></a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link--youtube" href="#" aria-label="Перейти на Youtube"></a>
-        </li>
-      </ul>
-    </section>
-    <section class="page-footer__copyright copyright">
-      <h2 class="visually-hidden">Разработчики</h2>
-      <span>Разработано</span>
-      <img src="https://via.placeholder.com/27x34" />
-    </section>
-  </footer>
-</body>
-
+      </section>
+      <section class="page-footer__copyright copyright">
+        <h2 class="visually-hidden">Разработчики</h2>
+        <span>Разработано</span>
+        <img src="https://via.placeholder.com/27x34" alt="Сайт HTML Academy" />
+      </section>
+    </footer>
+  </body>
 </html>

@@ -1,285 +1,277 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head class="head">
-    <meta charset="utf-8" />
-    <title>HTML Academy: Пинк</title>
-  </head>
 
-  <body class="page__body">
-    <header class="page-header">
-      <a
-        class="page-header__logo logotype"
-        aria-label="Ссылка с логотипом на главную страницу"
-      >
-        <img
-          class="logotype__link"
-          src="https://via.placeholder.com/74x23"
-          alt="Pink"
-        />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="photo.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+<head class="head">
+  <meta charset="utf-8" />
+  <title>HTML Academy: Пинк</title>
+</head>
 
-    <main class="page-main">
-      <section class="intro">
-        <h1 class="intro__title">Фотографии<br />пользователей</h1>
-        <div class="intro__wrapperr">
-          <p class="intro__text">
-            Взгляните на фотографии, которые выкладывают пользователи!<br />
-            Видите, как не хватает ваших?
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo logotype" aria-label="Ссылка с логотипом на главную страницу">
+      <img class="logotype__link" src="https://via.placeholder.com/74x23" alt="Pink" />
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="photo.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="intro">
+      <h1 class="intro__title">Фотографии<br />пользователей</h1>
+      <div class="intro__wrapperr">
+        <p class="intro__text">
+          Взгляните на фотографии, которые выкладывают пользователи!<br />
+          Видите, как не хватает ваших?
+        </p>
+      </div>
+    </section>
+
+    <section class="user-gallery">
+      <h2 class="visually-hidden">Галерея пользователей</h2>
+
+      <article class="user-photo user-photo--main-photo">
+        <a class="user-photo__link user-photo__link--main-photo" href="#">
+          <img class="user-photo__img user-photo__img--main-photo" src="https://via.placeholder.com/280x180"
+            alt="Вид с моста на горы" />
+        </a>
+        <div class="user-photo__description user-photo__description--main-photo">
+          <div class="user-photo__author">
+            <h3 class="user-photo__author-name">Анна</h3>
+            <time class="user-photo__time" datetime="2020-07-18T15:00">(5 минут назад)</time>
+          </div>
+          <p class="user-photo__comment user-photo__comment--main-photo">
+            Прыгать или нет? Напишите в комментарии свой совет и смотрите
+            прямую трансляцию в перископе, задавайте свои вопросы!
           </p>
+          <div class="user-photo__likes user-photo__likes--main-photo">
+            <button class="user-photo__heart" type="button"></button>
+            <span class="user-photo__likes-quantity">Нравится: 215</span>
+          </div>
         </div>
-      </section>
+      </article>
 
-      <section class="user-gallery">
-        <h2 class="visually-hidden">Галерея пользователей</h2>
-
-        <article class="user-photo user-photo--main-photo">
+      <div class="user-photo__wrapper">
+        <article class="user-photo">
           <a class="user-photo__link user-photo__link--main-photo" href="#">
-            <img
-              class="user-photo__img user-photo__img--main-photo"
-              src="https://via.placeholder.com/280x180"
-              alt="Вид с моста на горы"
-            />
+            <img class="user-photo__img user-photo__img--main-photo" src="https://via.placeholder.com/280x180"
+              alt="Белая машина на парковке" />
           </a>
-          <div
-            class="user-photo__description user-photo__description--main-photo"
-          >
+          <div class="user-photo__description">
             <div class="user-photo__author">
-              <h3 class="user-photo__author-name">Анна</h3>
-              <time class="user-photo__time" datetime="2020-07-18T15:00"
-                >(5 минут назад)</time
-              >
+              <h3 class="user-photo__author-name">Левон</h3>
+              <time class="user-photo__time" datetime="2020-07-18T10:05">(5 часов назад)</time>
             </div>
-            <p class="user-photo__comment user-photo__comment--main-photo">
-              Прыгать или нет? Напишите в комментарии свой совет и смотрите
-              прямую трансляцию в перископе, задавайте свои вопросы!
+            <p class="user-photo__comment">
+              Вчера он на луну летал, сегодня в руки к нам попал.
             </p>
-            <div class="user-photo__likes user-photo__likes--main-photo">
+            <div class="user-photo__likes">
+              <button class="user-photo__heart" type="button"></button>
+              <span class="user-photo__likes-quantity">Нравится: 356</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="user-photo">
+          <a class="user-photo__link user-photo__link--main-photo" href="#">
+            <img class="user-photo__img user-photo__img--main-photo" src="https://via.placeholder.com/280x180"
+              alt="Барабанная установка" />
+          </a>
+          <div class="user-photo__description">
+            <div class="user-photo__author">
+              <h3 class="user-photo__author-name">Антон</h3>
+              <time class="user-photo__time" datetime="2020-07-17T22:05">(12 часов назад)</time>
+            </div>
+            <p class="user-photo__comment">Соседи будут рады!</p>
+            <div class="user-photo__likes">
+              <button class="user-photo__heart" type="button"></button>
+              <span class="user-photo__likes-quantity">Нравится: 666</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="user-photo">
+          <a class="user-photo__link user-photo__link--main-photo" href="#">
+            <img class="user-photo__img user-photo__img--main-photo" src="https://via.placeholder.com/280x180"
+              alt="Вид на небоскреб снизу" />
+          </a>
+          <div class="user-photo__description">
+            <div class="user-photo__author">
+              <h3 class="user-photo__author-name">Борис</h3>
+              <time class="user-photo__time" datetime="2020-07-17T11:05">(20 часов назад)</time>
+            </div>
+            <p class="user-photo__comment">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <div class="user-photo__likes">
               <button class="user-photo__heart" type="button"></button>
               <span class="user-photo__likes-quantity">Нравится: 215</span>
             </div>
           </div>
         </article>
 
-        <div class="user-photo__wrapper">
-          <article class="user-photo">
-            <a class="user-photo__link user-photo__link--main-photo" href="#">
-              <img
-                class="user-photo__img user-photo__img--main-photo"
-                src="https://via.placeholder.com/280x180"
-                alt="Белая машина на парковке"
-              />
-            </a>
-            <div class="user-photo__description">
-              <div class="user-photo__author">
-                <h3 class="user-photo__author-name">Левон</h3>
-                <time class="user-photo__time" datetime="2020-07-18T10:05"
-                  >(5 часов назад)</time
-                >
-              </div>
-              <p class="user-photo__comment">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-              <div class="user-photo__likes">
-                <button class="user-photo__heart" type="button"></button>
-                <span class="user-photo__likes-quantity">Нравится: 356</span>
-              </div>
+        <article class="user-photo">
+          <a class="user-photo__link user-photo__link--main-photo" href="#">
+            <img class="user-photo__img user-photo__img--main-photo" src="https://via.placeholder.com/280x180"
+              alt="Кубанская ярмарка" />
+          </a>
+          <div class="user-photo__description">
+            <div class="user-photo__author">
+              <h3 class="user-photo__author-name">Сергей</h3>
+              <time class="user-photo__time" datetime="2020-07-17T11:05">(25 часов назад)</time>
             </div>
-          </article>
-
-          <article class="user-photo">
-            <a class="user-photo__link user-photo__link--main-photo" href="#">
-              <img
-                class="user-photo__img user-photo__img--main-photo"
-                src="https://via.placeholder.com/280x180"
-                alt="Барабанная установка"
-              />
-            </a>
-            <div class="user-photo__description">
-              <div class="user-photo__author">
-                <h3 class="user-photo__author-name">Антон</h3>
-                <time class="user-photo__time" datetime="2020-07-17T22:05"
-                  >(12 часов назад)</time
-                >
-              </div>
-              <p class="user-photo__comment">Соседи будут рады!</p>
-              <div class="user-photo__likes">
-                <button class="user-photo__heart" type="button"></button>
-                <span class="user-photo__likes-quantity">Нравится: 666</span>
-              </div>
+            <p class="user-photo__comment">
+              Самая кубанская в мире!
+            </p>
+            <div class="user-photo__likes">
+              <button class="user-photo__heart" type="button"></button>
+              <span class="user-photo__likes-quantity">Нравится: 4</span>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="user-photo">
-            <a class="user-photo__link user-photo__link--main-photo" href="#">
-              <img
-                class="user-photo__img user-photo__img--main-photo"
-                src="https://via.placeholder.com/280x180"
-                alt="Вид на небоскреб снизу"
-              />
-            </a>
-            <div class="user-photo__description">
-              <div class="user-photo__author">
-                <h3 class="user-photo__author-name">Борис</h3>
-                <time class="user-photo__time" datetime="2020-07-17T11:05"
-                  >(20 часов назад)</time
-                >
-              </div>
-              <p class="user-photo__comment">
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </p>
-              <div class="user-photo__likes">
-                <button class="user-photo__heart" type="button"></button>
-                <span class="user-photo__likes-quantity">Нравится: 215</span>
-              </div>
+        <article class="user-photo">
+          <a class="user-photo__link user-photo__link--main-photo" href="#">
+            <img class="user-photo__img user-photo__img--main-photo" src="https://via.placeholder.com/7280x180"
+              alt="Селфи ног на вершине горы" />
+          </a>
+          <div class="user-photo__description">
+            <div class="user-photo__author">
+              <h3 class="user-photo__author-name">Максим</h3>
+              <time class="user-photo__time" datetime="2020-07-16T20:05">(40 часов назад)</time>
             </div>
-          </article>
-
-          <article class="user-photo">
-            <a class="user-photo__link user-photo__link--main-photo" href="#">
-              <img
-                class="user-photo__img user-photo__img--main-photo"
-                src="https://via.placeholder.com/280x180"
-                alt="Кубанская ярмарка"
-              />
-            </a>
-            <div class="user-photo__description">
-              <div class="user-photo__author">
-                <h3 class="user-photo__author-name">Сергей</h3>
-                <time class="user-photo__time" datetime="2020-07-17T11:05"
-                  >(25 часов назад)</time
-                >
-              </div>
-              <p class="user-photo__comment">
-                Самая кубанская в мире!
-              </p>
-              <div class="user-photo__likes">
-                <button class="user-photo__heart" type="button"></button>
-                <span class="user-photo__likes-quantity">Нравится: 4</span>
-              </div>
+            <p class="user-photo__comment">Где снег-то?</p>
+            <div class="user-photo__likes">
+              <button class="user-photo__heart" type="button"></button>
+              <span class="user-photo__likes-quantity">Нравится: 150</span>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="user-photo">
-            <a class="user-photo__link user-photo__link--main-photo" href="#">
-              <img
-                class="user-photo__img user-photo__img--main-photo"
-                src="https://via.placeholder.com/7280x180"
-                alt="Селфи ног на вершине горы"
-              />
-            </a>
-            <div class="user-photo__description">
-              <div class="user-photo__author">
-                <h3 class="user-photo__author-name">Максим</h3>
-                <time class="user-photo__time" datetime="2020-07-16T20:05"
-                  >(40 часов назад)</time
-                >
-              </div>
-              <p class="user-photo__comment">Где снег-то?</p>
-              <div class="user-photo__likes">
-                <button class="user-photo__heart" type="button"></button>
-                <span class="user-photo__likes-quantity">Нравится: 150</span>
-              </div>
+        <article class="user-photo">
+          <a class="user-photo__link user-photo__link--main-photo" href="#">
+            <img class="user-photo__img user-photo__img--main-photo" src="https://via.placeholder.com/280x180"
+              alt="Вид из окна самолета на его крыло" />
+          </a>
+          <div class="user-photo__description">
+            <div class="user-photo__author">
+              <h3 class="user-photo__author-name">Надежда</h3>
+              <time class="user-photo__time" datetime="2020-07-16T15:05">(45 часов назад)</time>
             </div>
-          </article>
-
-          <article class="user-photo">
-            <a class="user-photo__link user-photo__link--main-photo" href="#">
-              <img
-                class="user-photo__img user-photo__img--main-photo"
-                src="https://via.placeholder.com/280x180"
-                alt="Вид из окна самолета на его крыло"
-              />
-            </a>
-            <div class="user-photo__description">
-              <div class="user-photo__author">
-                <h3 class="user-photo__author-name">Надежда</h3>
-                <time class="user-photo__time" datetime="2020-07-16T15:05"
-                  >(45 часов назад)</time
-                >
-              </div>
-              <p class="user-photo__comment">Всем GM и взаимные лайки!</p>
-              <div class="user-photo__likes">
-                <button class="user-photo__heart" type="button"></button>
-                <span class="user-photo__likes-quantity">Нравится: 2560</span>
-              </div>
+            <p class="user-photo__comment">Всем GM и взаимные лайки!</p>
+            <div class="user-photo__likes">
+              <button class="user-photo__heart" type="button"></button>
+              <span class="user-photo__likes-quantity">Нравится: 2560</span>
             </div>
-          </article>
-        </div>
-      </section>
-    </main>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <footer class="page-footer">
-      <section class="page-footer__logo logotype">
-        <h2 class="visually-hidden">Логотип приложения Pink</h2>
-        <a class="page-footer__link">
-          <img
-            src="https://via.placeholder.com/145x40"
-            class="page-footer__logo-name logotype"
-            alt="Ссылка с логотипом на главную страницу"
-          />
-        </a>
-      </section>
-      <section class="page-footer__social social">
-        <h2 class="visually-hidden">Мы в социальных сетях</h2>
-        <ul class="social-list">
-          <li class="social-list__item">
-            <a
-              class="social-list__link social-list__link--twitter"
-              href="#"
-              aria-label="Перейти в Twitter"
-            ></a>
+    <section class="photo-constructor">
+      <form class="photo-constructor__form" action="https://echo.htmlacademy.ru/" method="post"
+        enctype="multipart/form-data" name="form-photo">
+        <h2 class="visually-hidden">Добавить новую фотографию</h2>
+        <p class="photo-constructor__title">
+          Затмите их всех!<br />Выкладывайте все, что накопилось в телефоне!
+        </p>
+        <img class="photo-constructor__image" src="https://via.placeholder.com/280x374"
+          alt="фотография зимней дороги сквозь лес">
+        <input class="visually-hidden" type="file" id="export" name="export" />
+        <label class="form-photo__add" for="export" aria-label="Выберите файл"></label>
+        <ul class="changing-effects">
+          <li class="changing-effects__item">
+            <button class="changing-effects__crop changing-effects__button-crop" type="button"
+              aria-label="Обрезать фотографию"></button>
+            <div class="changing-effects__range-scroller">
+              <button class="changing-effects__range-controller" type="button"
+                aria-label="Регулировка размера"></button>
+            </div>
           </li>
-          <li class="social-list__item">
-            <a
-              class="social-list__link social-list__link--facebook"
-              href="#"
-              aria-label="Перейти в Facebook"
-            ></a>
+          <li class="changing-effects__item">
+            <button class="changing-effect__fill changing-effects__button--fill" type="button"
+              aria-label="Изменить заливку"></button>
+            <div class="changing-effects__range-scroller">
+              <button class="changing-effects__range-controller" type="button"
+                aria-label="Регулировка заливки"></button>
+            </div>
           </li>
-          <li class="social-list__item">
-            <a
-              class="social-list__link social-list__link--youtube"
-              href="#"
-              aria-label="Перейти на Youtube"
-            ></a>
+          <li class="changing-effects__item">
+            <button class="changing-effects__contrast changing-effects__button--contrast" type="button"
+              aria-label="Изменить контрастность"></button>
+            <div class="changing-effects__range-scroller">
+              <button class="changing-effects__range-controller" type="button"
+                aria-label="Регулировка контрастности"></button>
+            </div>
           </li>
         </ul>
-      </section>
-      <section class="page-footer__copyright copyright">
-        <h2 class="visually-hidden">Разработчики</h2>
-        <span>Разработано</span>
-        <img src="https://via.placeholder.com/27x34" alt="Сайт HTML Academy" />
-      </section>
-    </footer>
-  </body>
+        <div class="changing-effects__buttons">
+          <button class="changing-effects__button button-post" type="submit">
+            Запостить
+          </button>
+          <button class="changing-effects__button button-cancel" type="reset">
+            Отмена
+          </button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <section class="page-footer__logo logotype">
+      <h2 class="visually-hidden">Логотип приложения Pink</h2>
+      <a class="page-footer__link">
+        <img src="https://via.placeholder.com/145x40" class="page-footer__logo-name logotype"
+          alt="Ссылка с логотипом на главную страницу" />
+      </a>
+    </section>
+    <section class="page-footer__social social">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twitter" href="#" aria-label="Перейти в Twitter"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="#" aria-label="Перейти в Facebook"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="#" aria-label="Перейти на Youtube"></a>
+        </li>
+      </ul>
+    </section>
+    <section class="page-footer__copyright copyright">
+      <h2 class="visually-hidden">Разработчики</h2>
+      <span>Разработано</span>
+      <img src="https://via.placeholder.com/27x34" alt="Сайт HTML Academy" />
+    </section>
+  </footer>
+</body>
+
 </html>

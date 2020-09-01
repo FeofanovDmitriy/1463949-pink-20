@@ -8,8 +8,9 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo logotype" aria-label="Ссылка с логотипом на главную страницу">
-      <img class="logotype__link" src="https://via.placeholder.com/74x23" alt="Pink" />
+    <a class="page-header__link">
+      <img class="logotype__logo" src="https://via.placeholder.com/74x23"
+        alt="Ссылка с логотипом на главную страницу" />
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -17,7 +18,7 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="index.html"> Главная </a>
           </li>
           <li class="site-list__item">
@@ -90,21 +91,21 @@
       <div class="advantages__wrapper">
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--cheer">
-            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__title">Поднимает настроение</p>
             <p class="advantages__description">
               Приложение позволит вам победить осеннюю хандру и депрессию
               буквально в несколько кликов!
             </p>
           </li>
           <li class="advantages__item advantages__item--diversify">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__title">Меняет мир вокруг</p>
             <p class="advantages__description">
               Сделайте снимок и украсьте его смайликом или текстовой подписью,
               чтобы усилить эффект
             </p>
           </li>
           <li class="advantages__item advantages__item--friends">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__title">Заводит новых друзей</p>
             <p class="advantages__description">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
               заводите новых
@@ -288,7 +289,7 @@
         </table>
 
         <div class="price-app__toggles carousel__toggles carousel-toggles">
-          <button class="carousel-toggles__toggle" type="button aria-label=" 1"></button>
+          <button class="carousel-toggles__toggle" type="button" aria-label="1"></button>
           <button class="carousel-toggles__toggle carousel-toggles__toggle--current" type="button"
             aria-label="2"></button>
           <button class="carousel-toggles__toggle" type="button" aria-label="3"></button>
@@ -330,14 +331,13 @@
   </main>
 
   <footer class="page-footer">
-    <section class="page-footer__logo logotype">
-      <h2 class="visually-hidden">Логотип приложения Pink</h2>
-      <a class="page-footer__link">
-        <img src="https://via.placeholder.com/145x40" class="page-footer__logo-name logotype"
-          alt="Ссылка с логотипом на главную страницу" />
-      </a>
-    </section>
-    <section class="page-footer__social social">
+    <div class="page-footer__social social">
+      <div class="page-footer__logo">
+        <a class="page-footer__link">
+          <img src="https://via.placeholder.com/145x40" class="page-footer__logo-name"
+            alt="Ссылка с логотипом на главную страницу" />
+        </a>
+      </div>
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social-list">
         <li class="social-list__item">
@@ -350,12 +350,12 @@
           <a class="social-list__link social-list__link--youtube" href="#" aria-label="Перейти на Youtube"></a>
         </li>
       </ul>
-    </section>
-    <section class="page-footer__copyright copyright">
+    </div>
+    <div class="page-footer__copyright copyright">
       <h2 class="visually-hidden">Разработчики</h2>
       <span>Разработано</span>
       <img src="https://via.placeholder.com/27x34" alt="Сайт HTML Academy" />
-    </section>
+    </div>
   </footer>
 </body>
 

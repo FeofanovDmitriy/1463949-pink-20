@@ -8,8 +8,9 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo logotype" aria-label="Ссылка с логотипом на главную страницу">
-      <img class="logotype__link" src="https://via.placeholder.com/74x23" alt="Pink" />
+    <a class="page-header__link">
+      <img class="logotype__logo" src="https://via.placeholder.com/74x23"
+        alt="Ссылка с логотипом на главную страницу" />
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -27,7 +28,7 @@
               Фотографии
             </a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="form.html">
               Конкурс
             </a>
@@ -43,18 +44,11 @@
   </header>
 
   <main class="page-main">
-    <section class="intro intro--short">
-      <h1 class="intro__title">
+    <div class="intro">
+      <h1 class="intro__title intro__title--form">
         Конкурс на самое безбашенное путешествие с Пинк
       </h1>
-      <div class="intro__wrapper">
-        <p class="intro__text">
-          Поделитесь своей историей и получите шанс выиграть ценный приз —
-          1000 миль на вашу бонусную карту!
-          <span class="intro__text-item">Пожалуйста, заполните форму ниже:</span>
-        </p>
-      </div>
-    </section>
+    </div>
 
     <section class="competition">
       <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
@@ -62,127 +56,111 @@
         вашу бонусную карту!</p>
 
       <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="competition__fieldset participant">
-          <legend class="participant__fullname">ФИО пользователя</legend>
-
-          <ul class="participant__list">
-            <li class="participant__item">
-              <label class="participant__label" for="participant-surname">Фамилия:</label>
-              <input class="participant__input" id="participant-surname" type="text" name="participant-surname"
+        <fieldset class="competition__fieldset field">
+          <ul class="field__list">
+            <li class="field__item">
+              <label class="field__label" for="field-surname">Фамилия:</label>
+              <input class="fieldt__input input-surname" id="field-surname" type="text" name="field-surname"
                 placeholder="Укажите фамилию *" required>
             </li>
 
-            <li class="participant__item">
-              <label class="participant__label" for="participant-name">Имя:</label>
-              <input class="participant__input" id="participant-name" type="text" name="participant-name"
+            <li class="field__item">
+              <label class="field__label" for="field-name">Имя:</label>
+              <input class="field__input input-name" id="field-name" type="text" name="field-name"
                 placeholder="Введите ваше имя *" required>
             </li>
 
-            <li class="participant__item">
-              <label class="participant__label" for="participant-patronymic">Отчество:</label>
-              <input class="participant__input" id="participant-patronymic" type="text" name="participant-patronymic"
+            <li class="field__item">
+              <label class="field__label" for="field-patronymic">Отчество:</label>
+              <input class="field__input input-patronymic" id="field-patronymic" type="text" name="field-patronymic"
                 placeholder="Ну и отчество тоже">
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="competition__fieldset achievements">
-          <legend class="achievements__legend">Ваши безбашенные&nbsp;достижения в путешествии</legend>
+          <legend class="achievements__legend">Ваши безбашенные достижения в путешествии</legend>
 
           <ul class="achievements__list">
             <li class="achievements__item">
-              <input class="achievements__input" id="shark-achievements" type="checkbox" name="shark-achievements"
-                checked>
-              <label class="achievements__label achievements_label--checkbox" for="shark-achievements">Сделал селфи с
-                акулой</label>
-            </li>
-
-            <li class="achievements__item achievements__item--beach">
-              <input class="achievements__input" id="beach-achievements" type="checkbox" name="beach-achievements"
-                checked>
-              <label class="achievements__label achievements__label--checkbox" for="beach-achievements">Обгорел на
-                пляже</label>
+              <input class="achievements__input" type="checkbox" id="selfie" name="selfie" checked>
+              <label class="achievements__label" for="selfie">Сделал селфи сакулой</label>
             </li>
 
             <li class="achievements__item">
-              <input class="achievements__input" id="norris-achievements" type="checkbox" name="norris-achievements">
-              <label class="achievements__label achievements__label--checkbox" for="norris-achievements">Видел Чака
-                Норриса</label>
+              <input class="achievements__input" type="checkbox" id="tan" name="tan" checked>
+              <label class="achievements__label" for="tan">Обгорел напляже</label>
             </li>
 
             <li class="achievements__item">
-              <input class="achievements__input" id="souvenir-achievements" type="checkbox"
-                name="souvenir-achievements">
-              <label class="achievements__label achievements__label--checkbox" for="souvenir-achievements">Накупил
-                сувениров</label>
+              <input class="achievements__input" type="checkbox" id="chuck" name="chuck">
+              <label class="achievements__label" for="chuck">Видел ЧакаНорриса</label>
             </li>
 
             <li class="achievements__item">
-              <input class="achievements__input" id="tower-achievements" type="checkbox" name="tower-achievements"
-                checked>
-              <label class="achievements__label achievements__label--checkbox" for="tower-achievements">Удержал
-                башню</label>
+              <input class="achievements__input" type="checkbox" id="souvenirs" name="souvenirs">
+              <label class="achievements__label" for="souvenirs">Накупил сувениров</label>
             </li>
 
             <li class="achievements__item">
-              <input class="achievements__input" id="hotel-achievements" type="checkbox" name="hotel-achievements">
-              <label class="achievements__label achievements__label--checkbox" for="hotel-achievements">Разгромил
-                отель</label>
+              <input class="achievements__input" type="checkbox" id="tower" name="tower" checked>
+              <label class="achievements__label" for="tower">Удержал башню</label>
+            </li>
+
+            <li class="achievements__item">
+              <input class="achievements__input" type="checkbox" id="hotel" name="hotel">
+              <label class="achievements__label" for="hotel">Разгромил отель</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="competition__fieldset participant">
-          <legend class="participant__legend">Контактные данные</legend>
+        <fieldset class="competition__fieldset contactst">
+          <legend class="contacts__legend">Контактные данные</legend>
 
-          <ul class="participant__list">
-            <li class="participant__item">
-              <label class="participant__label" for="participant-phone">Номер телефона</label>
-              <input class="participant__input" id="participant-phone" type="tel" name="participant-phone"
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <label class="contacts__label" for="contacts-phone">Номер телефона</label>
+              <input class="contacts__input input-phone" id="contacts-phone" type="tel" name="contacts-phone"
                 placeholder="Номер, пожалуйста">
             </li>
 
-            <li class="participant__item">
-              <label class="participant__label" for="participant-email">Aдрес почты</label>
-              <input class="participant__input" id="participant-email" type="email" name="participant-email"
+            <li class="contacts__item">
+              <label class="contacts__label" for="contacts-email">Aдрес почты</label>
+              <input class="contacts__input input-email" id="contacts-email" type="email" name="contacts-email"
                 placeholder="Введите почту *">
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="competition__fieldset achievements">
-          <legend class="achievements__legend">С каким приложением путешествовали</legend>
+        <fieldset class="competition__fieldset apps">
+          <legend class="apps__legend">С каким приложением путешествовали</legend>
 
-          <ul class="achievements__list">
-            <li class="achievements__item">
-              <input class="achievements__input" id="version-ios" type="radio" name="app-version" checked>
-              <label class="achievements__label achievements__label--radio" for="version-ios">Pink для iOS</label>
+          <ul class="apps__list">
+            <li class="apps__item">
+              <input class="apps__input" id="version-ios" type="radio" name="app-version" checked>
+              <label class="apps__label" for="version-ios">Pink для iOS</label>
             </li>
-            <li class="achievements__item">
-              <input class="achievements__input" id="version-android" type="radio" name="app-version">
-              <label class="achievements__label achievements__label--radio" for="version-android">Pink на
-                Android</label>
+            <li class="apps__item">
+              <input class="iapps__input" id="version-android" type="radio" name="app-version">
+              <label class="apps__label" for="version-android">Pink на Android</label>
             </li>
-            <li class="achievements__item">
-              <input class="achievements__input" id="version-windows" type="radio" name="app-version">
-              <label class="achievements__label achievements__label--radio" for="version-windows">Windows Phone</label>
+            <li class="apps__item">
+              <input class="apps__input" id="version-windows" type="radio" name="app-version">
+              <label class="apps__label" for="version-windows">Windows Phone</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="competition__fieldset participant">
-          <div class="participant__comment">
-            <legend class="visually-hidden">Комментарий участника</legend>
-
-            <textarea class="participant__input participant__input--comment" id="participant-comment" name="comment"
+        <fieldset class="competition__fieldset impressions">
+          <div class="impressions__comment">
+            <textarea class="impressions__input input-emotion" id="impressions-comment" name="comment"
               placeholder="Можно прям в красках, не стесняясь в выражениях" cols="30" rows="10"></textarea>
-            <label class="participant__label participant__label--comment" for="participant-comment">Опишите свои
-              эмоции</label>
+            <label class="impressions__label" for="impressions-comment">Опишите свои эмоции</label>
           </div>
         </fieldset>
 
         <div class="competition__footer">
-          <button class="competition__submit buttons-green" type="submit">Отправить форму</button>
+          <button class="competition__button-submit button" type="submit">Отправить форму</button>
           <p class="competition__text"><sup class="competition__sup">*</sup> — обязательные поля</p>
         </div>
       </form>
@@ -191,14 +169,13 @@
   </main>
 
   <footer class="page-footer">
-    <section class="page-footer__logo logotype">
-      <h2 class="visually-hidden">Логотип приложения Pink</h2>
-      <a class="page-footer__link">
-        <img src="https://via.placeholder.com/145x40" class="page-footer__logo-name logotype"
-          alt="Ссылка с логотипом на главную страницу" />
-      </a>
-    </section>
-    <section class="page-footer__social social">
+    <div class="page-footer__social social">
+      <div class="page-footer__logo">
+        <a class="page-footer__link">
+          <img src="https://via.placeholder.com/145x40" class="page-footer__logo-name"
+            alt="Ссылка с логотипом на главную страницу" />
+        </a>
+      </div>
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social-list">
         <li class="social-list__item">
@@ -211,12 +188,12 @@
           <a class="social-list__link social-list__link--youtube" href="#" aria-label="Перейти на Youtube"></a>
         </li>
       </ul>
-    </section>
-    <section class="page-footer__copyright copyright">
+    </div>
+    <div class="page-footer__copyright copyright">
       <h2 class="visually-hidden">Разработчики</h2>
       <span>Разработано</span>
       <img src="https://via.placeholder.com/27x34" alt="Сайт HTML Academy" />
-    </section>
+    </div>
   </footer>
 </body>
 

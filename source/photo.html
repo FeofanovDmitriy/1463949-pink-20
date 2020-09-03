@@ -8,10 +8,12 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__link">
-      <img class="logotype__logo" src="https://via.placeholder.com/74x23"
-        alt="Ссылка с логотипом на главную страницу" />
-    </a>
+    <div class="page-header__logo logotype">
+      <a class="logotype__link" href="index.html">
+        <img class="logotype__img" src="https://via.placeholder.com/74x23"
+          alt="Ссылка с логотипом на главную страницу" />
+      </a>
+    </div>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -19,24 +21,16 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
-              Главная
-            </a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="photo.html">
-              Фотографии
-            </a>
+            <a class="site-list__link" href="photo.html"> Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Конкурс
-            </a>
+            <a class="site-list__link" href="form.html">Конкурс </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru">
-              HTML Academy
-            </a>
+            <a class="site-list__link" href="https://htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -157,7 +151,7 @@
 
         <article class="user-photo">
           <a class="user-photo__link" href="#">
-            <img class="user-photo__img" src="https://via.placeholder.com/7280x180" alt="Селфи ног на вершине горы" />
+            <img class="user-photo__img" src="https://via.placeholder.com/280x180" alt="Селфи ног на вершине горы" />
           </a>
           <div class="user-photo__description">
             <div class="user-photo__author">
@@ -192,84 +186,84 @@
       </div>
     </section>
 
-    editor = redactor
-    tools = instrument
-
-
-
     <section class="photo-constructor">
-      <h2 class="visually-hidden">Фильтры фотоприложении Pink</h2>
+      <h2 class="photo-constructor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
 
-      <a href="#" class="photo-constructor__link" aria-label="Открыть полноразмерное изображение">
-        <img class="uphoto-constructor__img" src="https://via.placeholder.com/280x374"
-          alt="Фото зимней дороги для примера редоктирования в фоторедакторе Pink">
-      </a>
+      <div class="photo-constructor__wrapper">
+        <form class="photo-constructor__form redactor-photo" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="photo-constructor__add-file">
+            <input class="photo-constructor__input-file visually-hidden" id="photo-constructor-input-file"
+              type="file" />
+            <label class="photo-constructor__label-file" for="photo-constructor-input-file">
+              <img class="photo-constructor__img" src="https://via.placeholder.com/280x374"
+                alt="Фото зимней дороги для примера редоктирования в фоторедакторе Pink">
+            </label>
+          </fieldset>
 
-      <form class="photo-constructor__form redactor" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="redactor__filters">
-          <legend class="visually-hidden">Инструменты для редоктирования</legend>
+          <div class="redactor-photo__wrapper">
+            <div class="redactor-photo__filter">
+              <ul class="redactor-photo__tools">
+                <li class="redactor-photo__tool instrumen ">
+                  <input class="visually-hidden" id="instrument-crop" name="radio-instrument" type="radio">
+                  <label class="instrument__item instrument__item--active" for="instrument-crop">
+                    <img class="instrument__icon instrument__icon--crop" src="https://via.placeholder.com/44x44"
+                      alt="#"></img>
+                  </label>
+                </li>
 
-          <ul class="redactor__list">
-            <li class="redactor__item instrument">
-              <input class="visually-hidden" id="instrument-crop" name="radio-instrument" type="radio">
-              <label class="instrument__item instrument__item--active" for="instrument-crop">
-                <img class="instrument__icon instrument__icon--crop" src="https://via.placeholder.com/44x44"
-                  alt="#"></img>
-              </label>
-              <div class="instrument__scale scale">
-                <input class="scale__range scale__range--active" type="range" id="bar-crop" name="bar" min="0" max="10"
-                  value="3">
-                <label class="scale__range-label" for="bar-crop"><span class="visually-hidden">Ползунок изменения
-                    размера картинки</span></label>
+                <li class="redactor__item instrument">
+                  <input class="visually-hidden" id="instrument-fill" name="radio-instrument" type="radio">
+                  <label class="instrument__item" for="instrument-fill">
+                    <img class="instrument__icon instrument__icon--fill" src="https://via.placeholder.com/44x44"
+                      alt="#"></img>
+                  </label>
+                </li>
+
+                <li class="redactor__item instrument">
+                  <input class="visually-hidden" id="instrument-contrast" name="radio-instrument" type="radio">
+                  <label class="instrument__item" for="instrument-contrast">
+                    <img class="instrument__icon instrument__icon--contrast" src="https://via.placeholder.com/44x44"
+                      alt="#"></img>
+                  </label>
+                </li>
+              </ul>
+
+              <div class="redactor-photo__ranges">
+                <div class="redactor-photo__range redactor-photo__range--current">
+                  <div class="redactor-photo__range-scale"></div>
+                  <div class="redactor-photo__toggle redactor-photo__toggle--crop" tabindex="0"></div>
+                </div>
+                <div class="redactor-photo__range redactor-photo__range--fill">
+                  <div class="redactor-photo__range-scale"></div>
+                  <div class="redactor-photo__toggle redactor-photo__toggle--fill" tabindex="0"></div>
+                </div>
+                <div class="redactor-photo__range redactor-photo__range--contrast">
+                  <div class="redactor-photo__range-scale"></div>
+                  <div class="redactor-photo__toggle redactor-photo__toggle--contrast" tabindex="0"></div>
+                </div>
+
+                <div class="redactor-photo__buttons button">
+                  <button class="button redactor-photo__buttons--submit" type="submit">Запостить</button>
+                  <button class="button redactor-photo__buttons--reset" type="reset">Отмена</button>
+                </div>
               </div>
-            </li>
-
-            <li class="redactor__item instrument">
-              <input class="visually-hidden" id="instrument-fill" name="radio-instrument" type="radio">
-              <label class="instrument__item" for="instrument-fill">
-                <img class="instrument__icon instrument__icon--fill" src="https://via.placeholder.com/44x44"
-                  alt="#"></img>
-              </label>
-              <div class="instrument__scale scale">
-                <input class="scale__range" type="range" id="bar-fill" name="bar" min="0" max="10" value="9">
-                <label class="scale__range-label" for="bar-fill"><span class="visually-hidden">Ползунок изменения
-                    заливки</span></label>
-              </div>
-            </li>
-
-            <li class="redactor__item instrument">
-              <input class="visually-hidden" id="instrument-contrast" name="radio-instrument" type="radio">
-              <label class="instrument__item" for="instrument-contrast">
-                <img class="instrument__icon instrument__icon--contrast" src="https://via.placeholder.com/44x44"
-                  alt="#"></img>
-              </label>
-              <div class="instrument__scale scale">
-                <input class="scale__range" type="range" id="bar-contrast" name="bar" min="0" max="10" value="6">
-                <label class="scale__range-label" for="bar-contrast"><span class="visually-hidden">Ползунок изменения
-                    контрастности</span></label>
-              </div>
-            </li>
-          </ul>
-
-          <div class="redactorr__buttons button">
-            <button class="buttons button__item--submit" type="submit">Запостить</button>
-            <button class="buttons button__item--reset" type="reset">Отмена</button>
-          </div>
-        </fieldset>
-      </form>
+            </div>
+        </form>
+      </div>
     </section>
 
   </main>
 
   <footer class="page-footer">
+
+    <div class="page-footer__logo logotype">
+      <a class="logotype__link" href="index.html">
+        <img class="logotype__img" src="https://via.placeholder.com/145x40"
+          alt="Ссылка с логотипом на главную страницу" />
+      </a>
+    </div>
+
     <div class="page-footer__social social">
-      <div class="page-footer__logo">
-        <a class="page-footer__link">
-          <img src="https://via.placeholder.com/145x40" class="page-footer__logo-name"
-            alt="Ссылка с логотипом на главную страницу" />
-        </a>
-      </div>
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social-list">
         <li class="social-list__item">
           <a class="social-list__link social-list__link--twitter" href="#" aria-label="Перейти в Twitter"></a>
@@ -282,12 +276,14 @@
         </li>
       </ul>
     </div>
+
     <div class="page-footer__copyright copyright">
-      <h2 class="visually-hidden">Разработчики</h2>
-      <span>Разработано</span>
-      <img src="https://via.placeholder.com/27x34" alt="Сайт HTML Academy" />
+      <span class="copyright-text">Разработано</span>
+      <img class="copyright-img" src="https://via.placeholder.com/27x34" alt="Сайт HTML Academy" />
     </div>
+
   </footer>
+
 </body>
 
 </html>
